@@ -1,0 +1,100 @@
+header {
+  background: url('../img/header_bg.jpg')no-repeat center / cover ;
+  width: 100%;
+  padding-bottom: 85px;
+  padding-top: 20px;
+  overflow: hidden;
+  border-bottom: 10px solid #73c5d8;
+  .header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 105px;
+    .logo_wrapper {
+      width: 25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .logo {
+        img {
+          width: 60px;
+        }
+      }
+      .logo_text {
+        font-family: 'NotaBene', sans-serif;
+        font-weight: bold;
+        font-size: 28px;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 10px;
+      }
+    }
+    .nav_menu {
+      .navigation {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        .navigation_link  {
+          color: #fff;
+          text-decoration: none;
+          padding: 10px 0;
+          margin: 0 15px;
+          font-size: 16px;
+          text-transform: uppercase;
+          &:hover {
+            border-bottom: 2px solid #73c5d8;
+          }
+        }
+        .active_link {
+          border-bottom: 2px solid #73c5d8;
+        }
+      }
+      .burger_menu {
+        display: none;
+      }
+    }
+  }
+  .search {
+    button {
+      outline: none;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      font-weight: 100;
+      i {
+        font-size: 1.8em;
+      }
+    }
+    input {
+      opacity: 0;
+      transition: .5s ease-out;
+      position: absolute;
+      top: 75px;
+      right: 160px;
+      outline: none;
+      border-radius: 5px;
+      border: none;
+      padding: 5px;
+    }
+    .active_search_panel {
+      opacity: 1;
+      transition: .5s ease-out;
+    }
+  }
+  .main_title {
+    color: #fff;
+    p {
+      text-transform: capitalize;
+      font-size: 24px;
+    }
+  }
+  .number_phone {
+    margin-top: 170px;
+    color: #fff;
+    font-size: 30px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+}
